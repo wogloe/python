@@ -1,0 +1,8 @@
+{
+    "python.pythonPath": "C:\\My install\\Develop language\\python 27\\python.exe",
+    "python.unitTest.pyTestArgs": [],
+    "python.unitTest.unittestEnabled": false,
+    "python.unitTest.nosetestsEnabled": false,
+    "python.unitTest.pyTestEnabled": false,
+    "python.unitTest.promptToConfigure": false
+}
