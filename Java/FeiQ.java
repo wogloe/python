@@ -13,36 +13,36 @@ public class FeiQ {
 	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
 		
-		//¿Í»§¶Ë	·¢ËÍ¶Ë
-		// 1.´´½¨DatagramSocket¶ÔÏó£¬²¢ÇÒÉùÃ÷¶Ë¿Ú£¨¿Í»§¶Ë¶Ë¿Ú¿ÉÒÔÊ¡ÂÔ£¬¶ÔÓÚ·şÎñ¶Ë²»¹Ø×¢¶Ë¿Ú£©
+		//å®¢æˆ·ç«¯	å‘é€ç«¯
+		// 1.åˆ›å»ºDatagramSocketå¯¹è±¡ï¼Œå¹¶ä¸”å£°æ˜ç«¯å£ï¼ˆå®¢æˆ·ç«¯ç«¯å£å¯ä»¥çœç•¥ï¼Œå¯¹äºæœåŠ¡ç«¯ä¸å…³æ³¨ç«¯å£ï¼‰
 		
 	
-		// 2.°Ñ·¢ËÍµÄÄÚÈİ·â×°µ½DatagramPacket²¢ÇÒ°Ñ·şÎñ¶ËµÄIPÒÔ¼°¶Ë¿Ú´øÉÏ
+		// 2.æŠŠå‘é€çš„å†…å®¹å°è£…åˆ°DatagramPacketå¹¶ä¸”æŠŠæœåŠ¡ç«¯çš„IPä»¥åŠç«¯å£å¸¦ä¸Š
 		
 		for (int i = 0; i < 10; i++) {
 		DatagramSocket datagramSocket=new DatagramSocket();
 		InetAddress.getByName("192.168.1.2");
-		String str="ĞÖµÜ£¬¿ª¸öÍæĞ¦£¬ÏûÏ¢ºäÕ¨";
+		String str="å…„å¼Ÿï¼Œå¼€ä¸ªç©ç¬‘ï¼Œæ¶ˆæ¯è½°ç‚¸";
 	
 		DatagramPacket datagramPacket=new DatagramPacket(
-		getdata(str,i).getBytes(),getdata(str,i).length(), InetAddress.getByName("169.254.29.88"), 2425);//Ğìip:169.254.29.88
+		getdata(str,i).getBytes(),getdata(str,i).length(), InetAddress.getByName("169.254.29.88"), 2425);//å¾ip:169.254.29.88
 		
-		// 3.·¢ËÍDatagramPacket
+		// 3.å‘é€DatagramPacket
 		datagramSocket.send(datagramPacket);
 		
-		// 4.¹Ø±ÕDatagramSocket
-		System.out.println("·¢ËÍ³É¹¦"+i);
+		// 4.å…³é—­DatagramSocket
+		System.out.println("å‘é€æˆåŠŸ"+i);
 		}
 	
 	}
 	public static String getdata(String str,int i) {
 		//version:   time:  sender: ip: flag:  content
-		//°æ±¾ºÅ       Ê±¼ä   ·¢ËÍÈË   ip   ·¢ËÍ±êÊ¶·û32   ÄÚÈİ
+		//ç‰ˆæœ¬å·       æ—¶é—´   å‘é€äºº   ip   å‘é€æ ‡è¯†ç¬¦32   å†…å®¹
 		
 		StringBuffer sb=new StringBuffer();
 		sb.append("1.0:");
 		sb.append(new Date().getTime()+":");
-		sb.append("ĞìÕñ¼Ò:");
+		sb.append("å¾æŒ¯å®¶:");
 		sb.append("69696969:");
 		sb.append("32:");
 		sb.append(str);
@@ -54,3 +54,4 @@ public class FeiQ {
 	}
 
 }
+{he is my first}
